@@ -28,7 +28,7 @@ const Home = () => {
       >
         {/* Welcome Section */}
         <div className="text-center py-16 px-4 max-w-4xl mx-auto bg-opacity-60 bg-black">
-          <h1 className="text-5xl font-bold mb-4 tracking-tight">Welcome to RENTWITEASE NG</h1>
+          <h1 className="text-5xl font-bold mb-4 tracking-tight">RENTWITEASE NG</h1>
           <p className="text-lg mb-6">Find your dream property in the best locations.</p>
           <div className="flex justify-center gap-4 mb-8">
             <a

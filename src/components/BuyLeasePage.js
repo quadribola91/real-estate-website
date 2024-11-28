@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const BuyLeasePage = () => {
   const locations = [
@@ -8,6 +8,11 @@ const BuyLeasePage = () => {
     { name: 'Ogudu/Alapere', price: '₦8,000,000', type: '1-Room Self Contained' },
     { name: 'Surulere', price: '₦15,000,000', type: 'Studio' },
   ];
+
+  // Scroll to the top when the component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section id="buy-lease" className="p-8 bg-white py-16">

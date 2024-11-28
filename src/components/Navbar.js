@@ -54,7 +54,7 @@ const Navbar = () => {
           <a href="/">Home</a>
           <a href="/services">Services</a>
           <a href="/book-inspection">Book Inspection</a>
-          <a href="#contact">Contact</a>
+          <a href="/contact">Contact</a>
         </div>
       </div>
 
@@ -64,10 +64,10 @@ const Navbar = () => {
           className={`lg:hidden mt-4 space-y-4 text-white grid grid-cols-1 text-center absolute top-16 right-0 w-full bg-blue-500 shadow-lg`}
           style={{ maxHeight: 'calc(100vh - 4rem)' }} // Prevent vertical overflow
         >
-          <a href="#home">Home</a>
-          <a href="#services">Services</a>
-          <a href="#booking">Book Inspection</a>
-          <a href="#contact">Contact</a>
+          <a href="/">Home</a>
+          <a href="/services">Services</a>
+          <a href="/book-inspection">Book Inspection</a>
+          <a href="/contact">Contact</a>
         </div>
       )}
     </nav>
