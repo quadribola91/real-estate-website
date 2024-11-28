@@ -6,7 +6,9 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-blue-500 p-4 shadow-md">
       <div className="flex justify-between items-center">
-        <div className="text-white text-lg font-bold"><a href="/">RENTWITEASE NG</a></div>
+        <div className="text-white text-lg font-bold">
+          <a href="/">RENTWITEASE NG</a>
+        </div>
 
         {/* Mobile menu toggle button */}
         <button
@@ -56,19 +58,18 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
-      <div
-        className={`${
-          isMenuOpen
-            ? 'transform translate-x-0 transition-all duration-1000 ease-in-out'
-            : 'transform translate-x-full'
-        } lg:hidden mt-4 space-y-4 text-white grid grid-cols-1 text-center absolute top-16 right-0 w-full bg-blue-500 shadow-lg`}
-      >
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#booking">Book Inspection</a>
-        <a href="#contact">Contact</a>
-      </div>
+      {/* Mobile menu - Render only if menu is open */}
+      {isMenuOpen && (
+        <div
+          className={`lg:hidden mt-4 space-y-4 text-white grid grid-cols-1 text-center absolute top-16 right-0 w-full bg-blue-500 shadow-lg`}
+          style={{ maxHeight: 'calc(100vh - 4rem)' }} // Prevent vertical overflow
+        >
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#booking">Book Inspection</a>
+          <a href="#contact">Contact</a>
+        </div>
+      )}
     </nav>
   );
 };

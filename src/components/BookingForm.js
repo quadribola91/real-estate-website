@@ -57,6 +57,22 @@ const BookingForm = () => {
           <label className="block text-sm font-semibold mb-2">Email</label>
           <input type="email" className="w-full p-2 border border-gray-300" required />
         </div>
+        
+        {/* Rent/Buy/Lease dropdown */}
+        <div className="mb-4">
+          <label className="block text-sm font-semibold mb-2">Action Type</label>
+          <select 
+            value={actionType} 
+            onChange={handleActionTypeChange} 
+            className="w-full p-2 border border-gray-300"
+            required
+          >
+            <option value="">Select Action</option>
+            <option value="Rent">Rent</option>
+            <option value="Buy">Buy</option>
+            <option value="Lease">Lease</option>
+          </select>
+        </div>
 
         {/* Location dropdown */}
         <div className="mb-4">
@@ -92,22 +108,6 @@ const BookingForm = () => {
             <option value="3-Bedroom miniflat">3-Bedroom miniflat</option>
             <option value="Studio">Studio</option>
             <option value="Duplex">Duplex</option>
-          </select>
-        </div>
-
-        {/* Rent/Buy/Lease dropdown */}
-        <div className="mb-4">
-          <label className="block text-sm font-semibold mb-2">Action Type</label>
-          <select 
-            value={actionType} 
-            onChange={handleActionTypeChange} 
-            className="w-full p-2 border border-gray-300"
-            required
-          >
-            <option value="">Select Action</option>
-            <option value="Rent">Rent</option>
-            <option value="Buy">Buy</option>
-            <option value="Lease">Lease</option>
           </select>
         </div>
 

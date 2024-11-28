@@ -2,11 +2,11 @@ import React from 'react';
 
 const RentPage = () => {
   const locations = [
-    { name: 'Location 1', price: '₦50,000', type: '1-Bedroom Miniflat' },
-    { name: 'Location 2', price: '₦80,000', type: '2-Bedroom Miniflat' },
-    { name: 'Location 3', price: '₦120,000', type: '3-Bedroom Miniflat' },
-    { name: 'Location 4', price: '₦60,000', type: '1-Room Self Contained' },
-    { name: 'Location 5', price: '₦100,000', type: 'Studio' },
+    { name: 'Yaba axis', price: '₦10,000,000', type: '1-Bedroom Miniflat' },
+    { name: 'Anthony/Maryland', price: '₦20,000,000', type: '2-Bedroom Miniflat' },
+    { name: 'Ifako-Gbagada', price: '₦30,000,000', type: '3-Bedroom Miniflat' },
+    { name: 'Ogudu/Alapere', price: '₦8,000,000', type: '1-Room Self Contained' },
+    { name: 'Surulere', price: '₦15,000,000', type: 'Studio' },
   ];
 
   return (

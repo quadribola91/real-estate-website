@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "api_key",
-  authDomain: "highcloud-tech.firebaseapp.com",
-  projectId: "highcloud-tech",
-  storageBucket: "highcloud-tech.appspot.com",
-  messagingSenderId: "45516879301",
-  appId: "1:45516879301:web:d949bdf5a51d3f30bb47ac",
+  apiKey: "AIzaSyBlJd8kJL9LpIjX6MMU8XDd7NsxtkzHvvM",
+  authDomain: "rentwiteaseng-d9e7f.firebaseapp.com",
+  projectId: "rentwiteaseng-d9e7f",
+  storageBucket: "rentwiteaseng-d9e7f.firebasestorage.app",
+  messagingSenderId: "283165532584",
+  appId: "1:283165532584:web:3da64e3a286a2eb6f47d9d",
 };
 
 const app = initializeApp(firebaseConfig);

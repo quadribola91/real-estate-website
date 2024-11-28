@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Services from './Services';
 
 const Home = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -72,6 +73,7 @@ const Home = () => {
           </div>
         </div>
       )}
+      <Services/>
 
       {/* About Us Section */}
       <section id="about-us" className="py-16 bg-blue-500 text-white text-bold text-md">
