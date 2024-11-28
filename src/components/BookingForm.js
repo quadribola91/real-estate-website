@@ -35,10 +35,11 @@ const BookingForm = () => {
     // Additional logic to handle the booking can go here.
   };
 
-  // Disable all days except Tuesday (2), Wednesday (3), and Saturday (6)
+  // Disable past dates
   const tileDisabled = ({ date }) => {
-    const dayOfWeek = date.getDay();
-    return !(dayOfWeek === 2 || dayOfWeek === 3 || dayOfWeek === 6); // Disable all except Tue, Wed, and Sat
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Set the current time to midnight to only compare the date
+    return date < today; // Disable dates before today
   };
 
   return (
